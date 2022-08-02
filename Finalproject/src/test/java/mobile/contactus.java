@@ -24,16 +24,17 @@ public class contactus {
          Set<String> windows = driver.getWindowHandles();
          Iterator<String> it = windows.iterator();
          @SuppressWarnings("unused")
-		String parentId = it.next();
-         String childId = it.next();
-         driver.switchTo().window(childId);
-         driver.manage().window().maximize();
-         driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("sharath.r");
-         driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("sharathru98@gmail.com");
-         driver.findElement(By.xpath("//input[@placeholder='Phone']")).sendKeys("7975537705");
-         driver.findElement(By.name("message")).sendKeys("Hello");
-         driver.findElement(By.xpath("//input[@type='submit']")).click();
-         driver.quit();
+ 		String parentId = it.next();
+          String childId = it.next();
+          driver.switchTo().window(childId);
+          driver.manage().window().maximize();
+          driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("sharath.r");
+          driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("sharathru98@gmail.com");
+          driver.findElement(By.xpath("//input[@placeholder='Phone']")).sendKeys("7975537705");
+          driver.findElement(By.name("message")).sendKeys("Hello");
+          driver.findElement(By.xpath("//input[@type='submit']")).click();
+          driver.quit();
+   
 
       }
   }
